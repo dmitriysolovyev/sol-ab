@@ -1,11 +1,42 @@
+html,
 body {
-  font-size: 16px;
-  color: #fff;
-  background-color: white;
-  font-family: 'Arimo', sans-serif;
-  font-family: 'Roboto', sans-serif;
+	height: 100%;
+	background-color: white;
+}
+body {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	ext-shadow: 0 1px 1px rgba(0,0,0,.2);
 }
 
-.csa-head {
-	background: url('/images/1.png');
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+	background: url('../images/text.jpg') no-repeat center center;
+	background-size: cover;
+}
+.cover-main {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4vw;	
+	font-weight: 100;
+}
+
+h1 span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	letter-spacing: -0.035em;	
 }
