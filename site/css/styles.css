@@ -19,24 +19,55 @@ body {
 }
 .site-wrapper-inner {
 	display: table-cell;
-	vertical-align: top;
-	background: url('../images/text.jpg') no-repeat center center;
+	/*background: url('../images/text.jpg') no-repeat center center;*/
 	background-size: cover;
 }
-.cover-main {
+.site-wrapper-inner {
+	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;
+	font-size: 4.6vw;	
+
+
+    /*vertical-align: middle;*/
+    /*padding-top: 256px;
+    padding-left: 311px;*/
+ }
+
+.cover-main {
+/*	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;*/
+}
+
+.brand-name {
+	margin-bottom: 295px;
 }
 
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 4vw;	
+	font-size: 1em;	
 	font-weight: 100;
+	letter-spacing: 0.005em;	
 }
 
 h1 span {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1em;
-	letter-spacing: -0.035em;	
+	letter-spacing: -0.05em;	
+}
+
+.welcome-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.28em;
+	color: red;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;	
+
+	/*display: none;*/
+}
+
+.welcome-text .text-rus {
+	margin-bottom: 5px;
 }
