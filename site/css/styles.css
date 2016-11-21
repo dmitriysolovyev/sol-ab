@@ -7,7 +7,6 @@ body {
 	color: black;
 	font-size: 16px;
 	text-align: center;
-	ext-shadow: 0 1px 1px rgba(0,0,0,.2);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -19,7 +18,7 @@ body {
 }
 .site-wrapper-inner {
 	display: table-cell;
-	/*background: url('../images/text.jpg') no-repeat center center;*/
+	ackground: url('../images/text.jpg') no-repeat center center;
 	background-size: cover;
 }
 .site-wrapper-inner {
@@ -41,7 +40,7 @@ body {
 }
 
 .brand-name {
-	margin-bottom: 295px;
+	margin-bottom: 100px;
 }
 
 h1 {
@@ -61,7 +60,6 @@ h1 span {
 .welcome-text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.28em;
-	color: red;
 	text-transform: uppercase;
 	letter-spacing: 0.025em;	
 
@@ -70,4 +68,38 @@ h1 span {
 
 .welcome-text .text-rus {
 	margin-bottom: 5px;
+}
+
+.welcome-text .text-rus:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.welcome-text .text-en {
+	font-size: 2em;
+}
+
+.cover-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-inner {
+	margin: 0 auto;
+	padding-bottom: 20px;
+
+}
+
+.footer-inner a {
+	font-family: 'Open Sans', sans-serif;
+  	text-decoration: none;
+  	font-size: 0.28em;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.footer-inner a:hover {
+  	text-decoration: none;
+  	opacity: 0.5;
 }
