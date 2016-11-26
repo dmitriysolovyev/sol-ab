@@ -18,14 +18,12 @@ body {
 }
 .site-wrapper-inner {
 	display: table-cell;
-	ackground: url('../images/text.jpg') no-repeat center center;
-	background-size: cover;
 }
 .site-wrapper-inner {
 	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 4.6vw;	
+	/*fnt-size: 4.6vw;	*/
 
 
     /*vertical-align: middle;*/
@@ -33,7 +31,20 @@ body {
     padding-left: 311px;*/
  }
 
+.background-img {
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url('../images/01.png') no-repeat center center;
+	background-size: cover;
+}
+
 .cover-main {
+	position: relative;
+	z-index: 100;
 /*	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;*/
@@ -80,6 +91,7 @@ h1 span {
 
 .cover-footer {
 	position: fixed;
+	z-index: 100;
 	bottom: 0;
 	width: 100%;
 }
@@ -93,6 +105,7 @@ h1 span {
 .footer-inner a {
 	font-family: 'Open Sans', sans-serif;
   	text-decoration: none;
+  	outline: none;
   	font-size: 0.28em;
 	color: black;
 	text-transform: uppercase;
@@ -102,4 +115,34 @@ h1 span {
 .footer-inner a:hover {
   	text-decoration: none;
   	opacity: 0.5;
+}
+
+.footer-inner img {
+	display: none;
+	opacity: 0.3;
+	margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+	.site-wrapper-inner {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.site-wrapper-inner {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.site-wrapper-inner {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.site-wrapper-inner {
+		font-size: 4.6vw;
+	}
 }
