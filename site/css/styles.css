@@ -145,4 +145,9 @@ h1 span {
 	.site-wrapper-inner {
 		font-size: 4.6vw;
 	}
+
+	.footer-inner a {
+  		font-size: 0.4em;
+		etter-spacing: 0.025em;
+	}
 }
