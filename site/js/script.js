@@ -1,8 +1,5 @@
 
-var imgHead = [ './images/01.png',
-	            './images/02.png',
-	            './images/03.png',
-	            './images/04.png'];
+var imgHead = [];
 
 function change_image() {
 	if(window.matchMedia('(max-width: 767px)').matches) {
@@ -28,10 +25,10 @@ function change_image() {
 
 	} else if(window.matchMedia('(min-width: 1200px)').matches) {
 		console.log('(min-width: 1200px)');
-		imgHead = [ './images/01.png',
-		            './images/02.png',
-		            './images/03.png',
-		            './images/04.png'];
+		imgHead = [ './images/01_1200.png',
+	                './images/02_1200.png',
+	                './images/03_1200.png',
+	                './images/04_1200.png'];
 	}
 }
 
@@ -62,5 +59,5 @@ function csaHead(){
         $('.background-img').animate({'opacity':'1'},1000);
     }
 }
-csaHead();
+// csaHead();
 var intervalCsaHead = setInterval(csaHead,10000);

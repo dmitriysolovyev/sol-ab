@@ -38,7 +38,7 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: url('../images/01.png') no-repeat center center;
+	/*background: url('../images/01_1200.png') no-repeat center center;*/
 	background-size: cover;
 }
 
@@ -127,11 +127,19 @@ h1 span {
 	.site-wrapper-inner {
 		font-size: 40px;
 	}
+	
+	.background-img {
+		background: url('../images/01_1200.png') no-repeat center center;
+	}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.site-wrapper-inner {
 		font-size: 40px;
+	}
+
+	.background-img {
+		background: url('../images/01_992.png') no-repeat center center;
 	}
 }
 
@@ -139,11 +147,18 @@ h1 span {
 	.site-wrapper-inner {
 		font-size: 30px;
 	}
+	.background-img {
+		background: url('../images/01_768.png') no-repeat center center;
+	}
 }
 
 @media (max-width: 767px) {
 	.site-wrapper-inner {
 		font-size: 4.6vw;
+	}
+
+	.background-img {
+		background: url('../images/01_768.png') no-repeat center center;
 	}
 
 	.footer-inner a {
