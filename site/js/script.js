@@ -37,10 +37,10 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 	var indx = 0;
 	function background_next() {
 	           
-		$('.background-img').css({'background':'url(' + images_back[indx] +
-	            	                              ') no-repeat center center',
-	        					  'background-size':'cover',
-	        					  'opacity':'0'});
+		$('.background-img').css({'background': 'url(' + images_back[indx] +
+	            	                               ') no-repeat center center',
+	        					  'background-size': 'cover',
+	        					  'opacity': '0'});
 	}
 
 	function change_image(){
@@ -48,11 +48,11 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 			background_next();
 			first_load = false;
 		} else {
-			$('.background-img').animate({'opacity':'0'},
+			$('.background-img').animate({'opacity': '0'},
 	            					     2500,
 	        					         background_next);
 		}
-	    $('.background-img').animate({'opacity':'1'},
+	    $('.background-img').animate({'opacity': '1'},
 	        						 1200,
 	        						 function() {
 	        						 	indx = ++indx % images_back.length;
