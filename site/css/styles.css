@@ -39,7 +39,7 @@ body {
 	height: 100%;
 	width: 100%;
 	/*background: url('../images/01_1200.png') no-repeat center center;*/
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 .cover-main {
@@ -128,9 +128,10 @@ h1 span {
 		font-size: 40px;
 	}
 	
-	.background-img {
+	/*.background-img {
 		background: url('../images/01_1200.png') no-repeat center center;
-	}
+		background-size: cover;
+	}*/
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -138,18 +139,20 @@ h1 span {
 		font-size: 40px;
 	}
 
-	.background-img {
+/*	.background-img {
 		background: url('../images/01_992.png') no-repeat center center;
-	}
+		background-size: cover;
+	}*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.site-wrapper-inner {
 		font-size: 30px;
 	}
-	.background-img {
+/*	.background-img {
 		background: url('../images/01_768.png') no-repeat center center;
-	}
+		background-size: cover;
+	}*/
 }
 
 @media (max-width: 767px) {
@@ -157,9 +160,10 @@ h1 span {
 		font-size: 4.6vw;
 	}
 
-	.background-img {
+/*	.background-img {
 		background: url('../images/01_768.png') no-repeat center center;
-	}
+		background-size: cover;
+	}*/
 
 	.footer-inner a {
   		font-size: 0.4em;
