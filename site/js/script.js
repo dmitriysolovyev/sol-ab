@@ -33,14 +33,24 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 		}
 	}
 
+	
 	var first_load = true;
 	var indx = 0;
 	function background_next() {
-	           
-		$('.background-img').css({'background': 'url(' + images_back[indx] +
-	            	                               ') no-repeat center center',
-	        					  'background-size': 'cover',
-	        					  'opacity': '0'});
+
+		var img = new Image();
+		img.onload = function() {
+			$('.background-img').css({'background': 'url(' + img.src +
+	            	                                   ') no-repeat center center',
+	        					      'background-size': 'cover',
+	        					      'opacity': '0'});
+			$('.background-img').animate({'opacity': '1'},
+	        						     1200,
+	        						     function() {
+	        						 	    indx = ++indx % images_back.length;
+	        						     });
+		};
+		img.src = images_back[indx];
 	}
 
 	function change_image(){
@@ -52,11 +62,6 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 	            					     2500,
 	        					         background_next);
 		}
-	    $('.background-img').animate({'opacity': '1'},
-	        						 1200,
-	        						 function() {
-	        						 	indx = ++indx % images_back.length;
-	        						 });
 	}
 
 	$(window).resize(resize_images);
