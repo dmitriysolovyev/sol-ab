@@ -103,18 +103,20 @@ h1 span {
 
 .contacts a {
 	display: block;
+	padding: 0;
+	margin: 0;
 	outline: none;
 	font-size: 0;
 }
 
-.contacts a:hover {
-	opacity: 0.5;
+.instagram {
+	opacity: 0.3;
 }
 
-.instagram {
-	padding: 0;
-	margin: 0;
+.contacts a:hover .instagram {
+	opacity: 0.2;
 }
+
 
 /*--------------------------*/
 
@@ -179,12 +181,12 @@ h1 span {
 		margin-bottom: 16vh;
 	}
 
+	.contacts .email {
+  		font-size: 0.6em;
+	}
+
 	.instagram {
 		width: 30px;
 		height: 30px;
-	}
-
-	.contacts .email {
-  		font-size: 0.44em;
 	}
 }
