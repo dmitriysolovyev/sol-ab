@@ -93,7 +93,7 @@ h1 span {
 }
 
 .contacts .email {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-family: 'Open Sans', sans-serif;
 	/*font-size: 0.33em;*/
 	font-size: 0.28em;
@@ -109,12 +109,12 @@ h1 span {
 	font-size: 0;
 }
 
-.instagram {
+/*.instagram {
 	opacity: 0.3;
 }
-
+*/
 .contacts a:hover .instagram {
-	opacity: 0.2;
+	opacity: 0.3;
 }
 
 
@@ -141,8 +141,8 @@ h1 span {
 	}
 	
 	.instagram {
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 	}
 }
 
@@ -152,8 +152,8 @@ h1 span {
 	}
 
 	.instagram {
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 	}
 }
 
@@ -162,31 +162,36 @@ h1 span {
 		font-size: 30px;
 	}
 
+	.welcome-text {
+		margin-bottom: 13vh;
+	}
+
 	.contacts .email {
-  		font-size: 0.44em;
+  		font-size: 0.28em;
 	}
 
 	.instagram {
-		width: 25px;
-		height: 25px;
+		width: 20px;
+		height: 20px;
 	}
 }
 
 @media (max-width: 767px) {
 	.site-wrapper-inner {
-		font-size: 4.6vw;
+		font-size: 6.2vmin;
 	}
+
 
 	.brand-name {
 		margin-bottom: 16vh;
 	}
 
 	.contacts .email {
-  		font-size: 0.6em;
+  		font-size: 0.44em;
 	}
 
 	.instagram {
-		width: 30px;
-		height: 30px;
+		width: 4.8vmin;
+		height: 4.8vmin;
 	}
 }
